@@ -25,14 +25,11 @@ class TacheController extends AbstractController
      */
     public function index(Request $request,TacheRepository $tacheRepository,  PaginatorInterface $paginator): Response
     {
+
         $donnees = $this->getDoctrine()->getRepository(Tache::class)->findBy([],['createdAt' => 'desc']);
 
         $taches = $paginator->paginate($donnees, $request->query->getInt('page', 1), 5
         );
-        // $c=count($paginator);
-        // foreach($paginator as $tache){
-        //     echo $tache->getHeadline()."\n";
-        // }
 
 
         return $this->render('tache/index.html.twig', [

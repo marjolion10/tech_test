@@ -17,8 +17,7 @@ class TacheFixtures extends Fixture
         	$tache->setTitre("Titre de la tâche n°".$i)
         		  ->setDescription("Description de la tâche n°".$i)
         		  ->setStatut("A faire")
-        		  ->setCreatedAt(new \DateTime())
-        		  ->setUpdatedAt(new \DateTime());
+        		  ->setCreatedAt(new \DateTime());
 
         		$manager->persist($tache);
         }

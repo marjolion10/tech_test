@@ -14,10 +14,14 @@
         <h3 class="panel-title">Liste des tâches</h3>
     </div>
         <div class="panel-body">
+            <div>
+                <p>Trier par :</p>
+                <p>{{ knp_pagination_sortable(taches, 'Date de création','createdAt') }}</p>
+                <p>{{ knp_pagination_sortable(taches, 'Statut','statut') }}</p>
+            </div>
         <table class="table table-striped table-hover">
         <thead>
             <tr>
-                {# <th>Id</th> #}
                 <th>Titre</th>
                 <th>Description</th>
                 <th>Statut</th>
@@ -28,7 +32,6 @@
         <tbody>
         {% for tache in taches %}
             <tr>
-                {# <td>{{ tache.id }}</td> #}
                 <td>{{ tache.titre }}</td>
                 <td>{{ tache.description }}</td>
                 <td>{{ tache.statut }}</td>
@@ -51,9 +54,4 @@
             <div>{{ knp_pagination_render(taches) }}</div>
         </div>
     </div>
-
-
-    
-
-
 {% endblock %}
