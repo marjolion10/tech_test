@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Tache{% endblock %}
+
+{% block body %}
+	<div class="panel panel-primary">
+    	<div class="panel-heading">
+    		<h3 class="panel-title">Créer une nouvelle tâche</h3>
+    	</div>
+    	<div class="panel-body">
+
+    		{{ include('tache/_form.html.twig') }}
+    		<ul class="nav nav-pills">
+    			<li><a href="{{ path('tache_index') }}">Retour à la liste<span class="badge"></span></a></li>
+    		</ul>
+		</div>
+	</div>
+{% endblock %}
