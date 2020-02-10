@@ -85,8 +85,9 @@ class Tache
 
     public function setCreatedAt(\DateTimeInterface $createdAt): self
     {
-        $this->createdAt = $createdAt;
-
+        $date = date_create();
+        date_timestamp_set($date, time());
+        $this->createdAt = $date;
         return $this;
     }
 }

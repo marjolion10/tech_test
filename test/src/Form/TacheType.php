@@ -25,7 +25,7 @@ class TacheType extends AbstractType
                     ],
                 ],
             ])
-            ->add('createdAt')
+            ->add('createdAt', null, array('label'=>false))
         ;
     }
 
