@@ -3,7 +3,7 @@ Projet pour test technique.
 
 Pour tester le projet:
 - ouvrir un terminal
-- Faire la commande git clone https://github.com/marjolion10/tech_test.git
+- Faire la commande git clone https://github.com/marjorie-pro/tech_test.git
 - Entrer dans le dossier tech_test, puis test
 - Faire un composer install
 
