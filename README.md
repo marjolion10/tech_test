@@ -1,5 +1,7 @@
-# tech_test
-Projet pour test technique.
+# my_list
+
+Projet permettant de créer une todo list.
+Il est possible de créer une tâche, la modifier ou la supprimer.
 
 Pour tester le projet:
 - ouvrir un terminal
